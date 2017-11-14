@@ -162,7 +162,7 @@ module.exports = function(options, repo, params, id, styles) {
           }
           delete headers['ETag']; // do not trust the tile ETag -- regenerate
           headers['Content-Encoding'] = 'gzip';
-            headers['Cache-Control'] = 'public, max-age=604800, s-maxage=604800';
+            headers['Cache-Control'] = 'public, max-age=604800';
 
             res.set(headers);
 
